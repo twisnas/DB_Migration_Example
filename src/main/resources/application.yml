@@ -1,0 +1,17 @@
+server:
+  servlet:
+    context-path: "/mediaLibrary"
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  datasource:
+    url: "jdbc:mysql://localhost:3306/media_library"
+    username: "springuser"
+    password: "SpringUserPassword"
+    validation-query: SELECT 1
+  flyway:
+    enabled: false
+  luqibase:
+    enabled: true
