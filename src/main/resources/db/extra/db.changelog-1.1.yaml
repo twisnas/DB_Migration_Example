@@ -1,0 +1,26 @@
+databaseChangeLog:
+ - changeSet:
+    id: 3
+    author: Travis
+    changes:
+    - createTable:
+        columns:
+        - column:
+            autoIncrement: true
+            constraints:
+              primaryKey: true
+              primaryKeyName: media_type_pkey
+            name: media_type_id
+            type: bigint
+        - column:
+            name: media_type_desc
+            type: VARCHAR(200)
+        tableName: media_type
+ - changeSet:
+    id: 4
+    author: Travis
+    changes:
+    - addUniqueConstraint:
+        columnNames: media_type_id
+        constraintName: MEDIA_media_type_id_uindex
+        tableName: media_type

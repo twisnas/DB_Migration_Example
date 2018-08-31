@@ -5,7 +5,7 @@ create table media_library.media_type
   constraint MEDIA_media_type_id_uindex
   unique (media_type_id)
 )
-  comment 'Main table for the media library application.';
+comment 'Holds media types like Book, BLU-RAY, or DVD.';
 
 alter table media_library.media_type
   add primary key (media_type_id);

@@ -22,7 +22,7 @@ public class MediaController {
     }
 
     @PostMapping("/media")
-    public ResponseEntity<Long> add(@RequestParam String title, @RequestParam String creator, @RequestParam Long mediaTypeId){
+    public ResponseEntity<Long> add(@RequestParam String title, @RequestParam String creator/*, @RequestParam Long mediaTypeId*/){
         Media media = new Media();
         media.setTitle(title);
         media.setCreator(creator);

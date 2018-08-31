@@ -1,0 +1,21 @@
+databaseChangeLog:
+ - changeSet:
+    id: 5
+    author: Travis
+    changes:
+    - addColumn:
+       columns:
+       - column:
+          name: media_type_id
+          type: bigint(20)
+       tableName: media
+ - changeSet:
+    id: 6
+    author: Travis
+    changes:
+    - addForeignKeyConstraint:
+       baseColumnNames: media_type_id
+       baseTableName: media
+       constraintName: fk_media_type_id
+       referencedColumnNames: media_type_id
+       referencedTableName: media_type

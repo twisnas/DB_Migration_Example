@@ -1,5 +1,5 @@
 databaseChangeLog:
-- changeSet:
+ - changeSet:
     id: 1
     author: Travis
     changes:
@@ -19,7 +19,7 @@ databaseChangeLog:
             name: media_creator
             type: VARCHAR(100)
         tableName: media
-- changeSet:
+ - changeSet:
     id: 2
     author: Travis
     changes:

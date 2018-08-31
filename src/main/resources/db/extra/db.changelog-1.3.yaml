@@ -1,0 +1,23 @@
+databaseChangeLog:
+- changeSet:
+    id: 7
+    author: Travis
+    changes:
+    - insert:
+        tableName: media_type
+        columns:
+        - column:
+            name: media_type_desc
+            value: "BOOK"
+    - insert:
+        tableName: media_type
+        columns:
+        - column:
+            name: media_type_desc
+            value: "DVD"
+    - insert:
+        tableName: media_type
+        columns:
+        - column:
+            name: media_type_desc
+            value: "BLU-RAY"

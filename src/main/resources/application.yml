@@ -12,6 +12,6 @@ spring:
     password: "SpringUserPassword"
     validation-query: SELECT 1
   flyway:
-    enabled: false
-  luqibase:
     enabled: true
+  liquibase:
+    enabled: false
