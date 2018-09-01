@@ -2,7 +2,7 @@
 ## To run the application you must have the following set up
 1. A MySql server instance with the database media_library created.
 2. A user with the username springuser and the password SpringUserPassword. <br />
- *Please note you can change this to be whatever you but you will need to update the application.yml file* 
+ *Please note you can change this to be whatever you want but you will need to update the application.yml file accordingly* 
 
 ## Changing from using flyway to using liquibase
 In the application.yml file there are two properties<br /> 
